@@ -202,14 +202,104 @@ ul {
       .header-tw__main-menu ul li .drop {
         display: none;
         width: 100%;
-        padding: 30px;
+        padding: 30px 30px 0;
         align-items: flex-start;
         position: absolute;
         top: 55px;
         left: 0;
         z-index: 3;
         background: #EAEAEA;
-        box-sizing: border-box; }
+        box-sizing: border-box;
+            /*&-list {
+              width: 33%;
+
+              @media screen and(max-width: 991px){
+                width: 100%;
+                margin-bottom: 20px;
+              }
+
+              & + .drop-all {
+                width: calc(100% - 33%);
+
+                .drop-all-item {
+                  width: 50%;
+                }
+              }
+
+              &-title {
+                margin-bottom: 10px;
+
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+
+                color: #000000;
+              }
+
+              ul {
+                display: block;
+
+                li {
+                  margin-bottom: 5px;
+                  display: block;
+
+                  &:after {
+                    display: none;
+                  }
+
+                  a {
+                    padding: 0;
+
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: rgba(0, 0, 0, 0.7);
+                    text-transform: inherit;
+
+                    &:after {
+                      display: none;
+                    }
+
+                    &:hover {
+                      color: #EB5E1F;
+                    }
+                  }
+                }
+              }
+            }
+
+            &-all {
+              width: 100%;
+
+              display: flex;
+              flex-wrap: wrap;
+
+              @media screen and(max-width: 991px){
+                width: 100%;
+                display: block;
+              }
+
+              &-item {
+                margin-bottom: 25px;
+                width: 33.333%;
+                display: block;
+
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+
+                color: #000000;
+                text-decoration: none;
+
+                @media screen and(max-width: 991px){
+                  width: 100%;
+                }
+
+                &:hover {
+                  color: #EB5E1F;
+                }
+              }
+            }*/ }
         @media screen and (max-width: 1200px) {
           .header-tw__main-menu ul li .drop {
             top: 65px; } }
@@ -218,59 +308,35 @@ ul {
             position: relative;
             padding: 0 15px 0 30px;
             top: 0; } }
-        .header-tw__main-menu ul li .drop-list {
-          width: 33%; }
-          @media screen and (max-width: 991px) {
-            .header-tw__main-menu ul li .drop-list {
-              width: 100%;
-              margin-bottom: 20px; } }
-          .header-tw__main-menu ul li .drop-list + .drop-all {
-            width: calc(100% - 33%); }
-            .header-tw__main-menu ul li .drop-list + .drop-all .drop-all-item {
-              width: 50%; }
-          .header-tw__main-menu ul li .drop-list-title {
-            margin-bottom: 10px;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            color: #000000; }
-          .header-tw__main-menu ul li .drop-list ul {
-            display: block; }
-            .header-tw__main-menu ul li .drop-list ul li {
-              margin-bottom: 5px;
-              display: block; }
-              .header-tw__main-menu ul li .drop-list ul li:after {
-                display: none; }
-              .header-tw__main-menu ul li .drop-list ul li a {
-                padding: 0;
-                font-weight: 400;
-                font-size: 12px;
-                line-height: 14px;
-                color: rgba(0, 0, 0, 0.7);
-                text-transform: inherit; }
-                .header-tw__main-menu ul li .drop-list ul li a:after {
-                  display: none; }
-                .header-tw__main-menu ul li .drop-list ul li a:hover {
-                  color: #EB5E1F; }
-        .header-tw__main-menu ul li .drop-all {
-          width: 100%;
-          display: flex;
-          flex-wrap: wrap; }
-          @media screen and (max-width: 991px) {
-            .header-tw__main-menu ul li .drop-all {
-              width: 100%;
-              display: block; } }
-          .header-tw__main-menu ul li .drop-all-item {
-            margin-bottom: 25px;
-            width: 33.333%;
-            display: block;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 16px;
-            color: #000000;
-            text-decoration: none; }
+        .header-tw__main-menu ul li .drop-col {
+          width: 33.333%; }
+        .header-tw__main-menu ul li .drop-item {
+          display: table;
+          margin-bottom: 35px;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 16px;
+          color: #000000 !important;
+          text-decoration: none; }
+          .header-tw__main-menu ul li .drop-item + .drop-item_small {
+            margin-top: -20px; }
             @media screen and (max-width: 991px) {
-              .header-tw__main-menu ul li .drop-all-item {
-                width: 100%; } }
-            .header-tw__main-menu ul li .drop-all-item:hover {
-              color: #EB5E1F; }
+              .header-tw__main-menu ul li .drop-item + .drop-item_small {
+                margin-top: 0; } }
+          @media screen and (max-width: 991px) {
+            .header-tw__main-menu ul li .drop-item {
+              margin-bottom: 20px; } }
+          .header-tw__main-menu ul li .drop-item_small {
+            margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: rgba(0, 0, 0, 0.7) !important;
+            text-transform: inherit; }
+            @media screen and (max-width: 991px) {
+              .header-tw__main-menu ul li .drop-item_small {
+                margin-bottom: 15px; } }
+            .header-tw__main-menu ul li .drop-item_small:hover {
+              color: #EB5E1F !important; }
+          .header-tw__main-menu ul li .drop-item:hover {
+            color: #EB5E1F !important; }

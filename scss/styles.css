@@ -1,0 +1,41 @@
+/*Colors*/
+/*Styles*/
+/*Common styles*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  min-width: 360px;
+  height: 100%;
+  font-family: "Play", sans-serif; }
+
+a, div, span, svg use, ul li {
+  transition: 0.3s; }
+
+a:hover {
+  text-decoration: none; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    padding: 0;
+    list-style: none; }
+
+.header-tw__top {
+  padding: 5px 0;
+  background: #EB5E1F; }
+  .header-tw__top-menu li a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #fff; }
+  .header-tw__top-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff; }
+
+/*# sourceMappingURL=styles.css.map */
